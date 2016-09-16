@@ -15,19 +15,6 @@ var app = app || {};
   app.Utils = {
     pluralize: function (count, word) {
       return count === 1 ? word : word + 's';
-    },
-
-    extend: function () {
-      var newObj = {};
-      for (var i = 0; i < arguments.length; i++) {
-        var obj = arguments[i];
-        for (var key in obj) {
-          if (obj.hasOwnProperty(key)) {
-            newObj[key] = obj[key];
-          }
-        }
-      }
-      return newObj;
     }
   };
 
@@ -68,7 +55,7 @@ var app = app || {};
     // we use map() and filter() everywhere instead of mutating the array or
     // todo items themselves.
     this.todos = this.todos.map(function (todo) {
-      return Utils.extend({}, todo, {completed: checked});
+      return Object.assign({}, todo, {completed: checked});
     });
 
     this.inform();
@@ -78,7 +65,7 @@ var app = app || {};
     this.todos = this.todos.map(function (todo) {
       return todo !== todoToToggle ?
         todo :
-        Utils.extend({}, todo, {completed: !todo.completed});
+        Object.assign({}, todo, {completed: !todo.completed});
     });
 
     this.inform();
@@ -94,7 +81,7 @@ var app = app || {};
 
   app.TodoModel.prototype.save = function (todoToSave, text) {
     this.todos = this.todos.map(function (todo) {
-      return todo !== todoToSave ? todo : Utils.extend({}, todo, {title: text});
+      return todo !== todoToSave ? todo : Object.assign({}, todo, {title: text});
     });
 
     this.inform();
