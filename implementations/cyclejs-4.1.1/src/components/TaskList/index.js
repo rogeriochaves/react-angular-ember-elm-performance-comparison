@@ -22,7 +22,6 @@ function amendStateWithChildren(DOMSource) {
         let props$ = xs.of(data);
         // Create scoped todo item dataflow component.
         let todoItem = isolate(Task)({DOM: DOMSource, props$});
-        debugger;
 
         // Return the new data item for the list property array.
         return {

@@ -23,6 +23,5 @@ node_modules/rxjs
 node_modules/tsd
 node_modules/typescript
 
-*.js
 *.js.map
 typings
