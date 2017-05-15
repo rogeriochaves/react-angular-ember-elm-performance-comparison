@@ -1,15 +1,20 @@
 {
+  "compileOnSave": false,
   "compilerOptions": {
-    "target": "ES5",
-    "module": "commonjs",
+    "outDir": "./dist/out-tsc",
+    "baseUrl": "src",
+    "sourceMap": true,
+    "declaration": false,
     "moduleResolution": "node",
-    "sourceMap": false,
     "emitDecoratorMetadata": true,
     "experimentalDecorators": true,
-    "removeComments": false,
-    "noImplicitAny": true
-  },
-  "files": [
-    "app/bootstrap.ts"
-  ]
+    "target": "es5",
+    "typeRoots": [
+      "node_modules/@types"
+    ],
+    "lib": [
+      "es2016",
+      "dom"
+    ]
+  }
 }

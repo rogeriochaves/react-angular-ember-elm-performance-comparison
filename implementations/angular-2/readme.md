@@ -1,32 +1,28 @@
-# Angular 2 • [TodoMVC](http://todomvc.com)
+# Angular2
 
-> Angular is a development platform for creating applications using modern web standards. Angular includes a wealth of essential features such as mobile gestures, animations, filtering, routing, data binding, security, internationalization, and beautiful UI components. It's extremely modular, lightweight, and easy to learn.
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.3.
 
-## Resources
+## Development server
 
-- [Website](https://angular.io/)
-- [Documentation](https://angular.io/docs/ts/latest/)
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
-### Articles
+## Code scaffolding
 
-- [Angular 2 Beta Announcement](http://angularjs.blogspot.co.uk/2015/12/angular-2-beta.html)
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|module`.
 
-### Support
+## Build
 
-- [StackOverflow](http://stackoverflow.com/questions/tagged/angular2)
-- [Google Groups](https://groups.google.com/forum/#!forum/angular)
-- [Twitter](http://twitter.com/angularjs)
-- [Google+](https://plus.sandbox.google.com/+AngularJS/posts)
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `-prod` flag for a production build.
 
-*Let us [know](https://github.com/tastejs/todomvc/issues) if you discover anything worth sharing.*
+## Running unit tests
 
-## Implementation
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
 
-This app was built using TypeScript and Angular 2 beta. To make changes simply
+## Running end-to-end tests
 
-* `npm i`
-* `npm run dev`
+Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Before running the tests make sure you are serving the app via `ng serve`.
 
-## Credit
+## Further help
 
-Created by [Sam Saccone](http://github.com/samccone)
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
