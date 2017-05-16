@@ -1,4 +1,7 @@
+let uuid = 0;
+
 export class Todo {
+	id: number;
 	completed: Boolean;
 	editing: Boolean;
 
@@ -11,6 +14,7 @@ export class Todo {
 	}
 
 	constructor(title: String) {
+		this.id = uuid++;
 		this.completed = false;
 		this.editing = false;
 		this.title = title.trim();
